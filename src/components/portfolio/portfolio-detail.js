@@ -62,9 +62,9 @@ export default class PortfolioDetail extends Component {
                 <h5>Category: {category}</h5>
               </div>
 
-              <div className="url-wrapper">
-                <h3>Visit: {url}</h3>
-              </div>
+              <a href={url} className="url-wrapper">
+                <h3>Visit: {name}</h3>
+              </a>
             </div>
           </div>
 

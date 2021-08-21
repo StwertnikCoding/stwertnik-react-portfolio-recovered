@@ -20,13 +20,32 @@
 
         .fixed-wrapper {
             font-size: 0.8em;
-            color: $warning;
+            color: $offwhite;
             position: fixed;
             bottom: 0;
             right: 0;
             padding: 10px;
 
+            .category-wrapper{
+                transition: 0.3s ease-in-out;
 
+
+                &:hover{
+                    color: $warning;
+                }
+            }
+
+             a {
+                text-decoration: none;
+                cursor: pointer;
+                color: $offwhite;
+                
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: $warning;
+                }
+            }
             
         }
     }        
