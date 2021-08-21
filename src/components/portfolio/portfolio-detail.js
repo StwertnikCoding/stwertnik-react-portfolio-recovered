@@ -56,16 +56,7 @@ export default class PortfolioDetail extends Component {
               </h1>
             </div>
 
-            <div className="fixed-wrapper">
-
-              <div className="category-wrapper">
-                <h5>Category: {category}</h5>
-              </div>
-
-              <a href={url} className="url-wrapper">
-                <h3>Visit: {name}</h3>
-              </a>
-            </div>
+            
           </div>
 
         <div className="center-wrapper">
@@ -86,6 +77,19 @@ export default class PortfolioDetail extends Component {
           </div>
 
           
+        </div>
+
+        <div className="info-wrapper">
+          <div className="fixed-wrapper">
+
+            <div className="category-wrapper">
+              <h5>Category: {category}</h5>
+            </div>
+
+            <a href={url} className="url-wrapper">
+              <h3>Visit: {name}</h3>
+            </a>
+          </div>
         </div>
       </div>
     );
