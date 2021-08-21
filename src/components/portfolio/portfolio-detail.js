@@ -62,11 +62,11 @@ export default class PortfolioDetail extends Component {
           </div>
 
         <div className="center-wrapper">
-          <div className="thumb_image_detail_wrapper">
+          <div className="thumb-image-detail-wrapper">
             <img src={thumb_image_url} />
           </div>
 
-          <div className="logo_detail-wrapper">
+          <div className="logo-detail-wrapper">
             <img src={logo_url} />
           </div>
         </div>
