@@ -10,20 +10,24 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 90%;
-        padding: 20;
+        padding: 0px;
         
 
         .title-wrapper {
             text-align: center;
-            font-size: 3em;
+            font-size: 2.3em;
         }
 
-        .category-wrapper {
-            font-size: 1em;
+        .fixed-wrapper {
+            font-size: 0.8em;
             color: $warning;
             position: fixed;
             bottom: 0;
             right: 0;
+            padding: 10px;
+
+
+            
         }
     }        
 
@@ -53,6 +57,20 @@
             height: calc(100vh - 84px);
             width: 40vw;
             padding: 30px;
+            padding-top: 0px;
+        }
+    }
+
+    .footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90vw;
+        height: calc(100vh - 669px);
+        padding-left: 10px;
+
+        .description-wrapper {
+            text-align: center;
+            font-size: 1.2em;
         }
 
         

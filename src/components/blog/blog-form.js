@@ -14,7 +14,7 @@ export default class BlogForm extends Component {
       blog_status: "",
       content: "",
       featured_image: "",
-      apiUrl: "https://tylerstwertnik.devcamp.space.portfolio?portfolio_blogs",
+      apiUrl: "https://tylerstwertnik.devcamp.space/portfolio/portfolio_blogs",
       apiAction: "post"
     };
 
