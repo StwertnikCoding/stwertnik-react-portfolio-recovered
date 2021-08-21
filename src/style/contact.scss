@@ -1,0 +1,52 @@
+.contact-page-wrapper {
+    @include page-wrapper();
+
+    .contact-image-wrapper {
+        @include image-wrapper();
+
+        .contact-image{
+            @include image-styles();
+        }
+    }
+
+    .contact-info-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 5px;
+
+        .contact-icon-wrapper {
+            padding-left: 300px;
+            font-size: 1.2em;
+            transition: 0.3s ease-in-out;
+            
+
+
+            &:hover {
+                color: $warning;
+            }
+
+            
+        }
+
+        .contact-email-wrapper {
+            padding-right: 250px;
+        }
+
+        .github-link-wrapper {
+            @include link-wrapper();
+
+            &:hover {
+                color: #7DBBE6;
+            }
+        }
+
+        .linkedin-link-wrapper {
+            @include link-wrapper();
+
+            &:hover {
+                color: #0E76A8;
+            }
+        }
+    }
+}
