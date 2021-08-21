@@ -26,7 +26,8 @@ export default class PortfolioDetail extends Component {
       )
       .then(response => {
         this.setState({
-          portfolioItem: response.data.portfolio_item
+          portfolioItem: response.data.portfolio_item,
+          thumbImage: response.data.thumb_image_url
         })
       })
       .catch(error => {
@@ -36,7 +37,6 @@ export default class PortfolioDetail extends Component {
 
   render() {
     const {
-      banner_image_url,
       category,
       description,
       logo_url,
@@ -48,14 +48,40 @@ export default class PortfolioDetail extends Component {
 
 
     return (
-      <div>
-        <h2>
-            {name}
-        </h2>
+      <div className="portfolio-detail-content-wrapper">
+          <div className="header-wrapper">
+            <div className="title-wrapper">
+              <h1>
+                  {name}
+              </h1>
+            </div>
 
-        <p>
-          {description}
-        </p>
+            <div className="category-wrapper">
+              <h5>Category: {category}</h5>
+            </div>
+          </div>
+
+        <div className="center-wrapper">
+          <div className="thumb_image_detail_wrapper">
+            <img src={thumb_image_url} />
+          </div>
+
+          <div className="logo_detail-wrapper">
+            <img src={logo_url} />
+          </div>
+        </div>
+
+        <div className="footer-wrapper">
+          <div className="description-wrapper">
+            <p>
+              {description}
+            </p>
+          </div>
+
+          <div className="url-wrapper">
+            <h2>{url}</h2>
+          </div>
+        </div>
       </div>
     );
   }
