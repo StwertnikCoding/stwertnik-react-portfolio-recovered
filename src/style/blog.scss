@@ -5,6 +5,22 @@
     color: $offwhite;
     background-color: $midred;
 
+    .admin-blog-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .delete-icon-wrapper{
+            margin-left: 15px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: warning;
+            }
+        }
+    }
+
     .new-blog-link {
         position: fixed;
         right: 0;

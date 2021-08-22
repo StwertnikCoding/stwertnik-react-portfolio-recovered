@@ -16,7 +16,7 @@ const BlogItem = props => {
         <div>
 
             <Link to={`/b/${id}`}>
-                <h1>
+                <h1 className="blog-title-wrapper">
                     {title}
                 </h1>
             </Link>
